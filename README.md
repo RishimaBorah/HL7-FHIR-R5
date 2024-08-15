@@ -6,7 +6,7 @@ This project aims to convert unstructured clinical data into a structured format
 
 The repository contains four main folders, each with specific scripts, input files, and output files. Follow the steps below to execute the scripts in the correct order.
 
-### Folder 1: Convert Unstructured data to Structured Format
+### Folder 1: clinical_notes_to_structured_fields
 
 This folder contains the necessary files to convert unstructured clinical data into a structured format.
 
@@ -20,7 +20,7 @@ This folder contains the necessary files to convert unstructured clinical data i
 2. **Dependencies**: 
    - pandas
 
-### Folder 2: Extraction and Transformation of the Medication Names 
+### Folder 2: data_transformation_medication_field
 
 This folder handles the extraction and transformation of medication names.
 - **Input Files**:
@@ -38,7 +38,7 @@ This folder handles the extraction and transformation of medication names.
     - nest_asyncio
     - tqdm
 
-### Folder 3: Extract Dosage Instructions for the Medications
+### Folder 3: data_transformation_dosage_instructions
 
 This folder is focused on extracting and structuring dosage instructions for the medications.
 
@@ -59,7 +59,7 @@ This folder is focused on extracting and structuring dosage instructions for the
 2. **Dependencies**:
    - pandas
 
-### Folder 4: Mapping to FHIR Resources
+### Folder 4: mapping
 
 This folder contains two independent subfolders for mapping `MedicationRequest` and `Patient` resources to FHIR formats.
 
