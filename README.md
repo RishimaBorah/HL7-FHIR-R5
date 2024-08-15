@@ -1,4 +1,4 @@
-# Unstructured Clinical Data to FHIR Mapping
+# Unstructured Clinical Data to a FHIR Compliant dataset
 
 This project aims to convert unstructured clinical data into a structured format and map it to corresponding FHIR resources.
 
