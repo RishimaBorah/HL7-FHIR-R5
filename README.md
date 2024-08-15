@@ -33,10 +33,10 @@ This folder handles the extraction and transformation of medication names.
 
 1. **Run the Script**: Execute the `medication_names_extracted.ipynb` notebook.
 2. **Dependencies**: 
-    -pandas
-    -aiohttp
-    -nest_asyncio
-    -tqdm
+    - pandas
+    - aiohttp
+    - nest_asyncio
+    - tqdm
 
 ### Folder 3: Extract Dosage Instructions for the Medications
 
@@ -87,8 +87,8 @@ This folder contains two independent subfolders for mapping `MedicationRequest` 
 
 1. **Run the Script**: Execute the `mapping_to_patient_fhir_resources_main_file.ipynb` notebook.
 2. **Dependencies**:
-  - pandas
-  - fhir.resources (which includes Bundle, Patient, Narrative)
+   - pandas
+   - fhir.resources (which includes Bundle, Patient, Narrative)
 
 
 ## 2. Deploying the Local HAPI FHIR Test Server Using Docker
@@ -106,16 +106,17 @@ To test the generated FHIR resources, you can deploy a local HAPI FHIR Test Serv
 
    Open your terminal and run the following command to pull the latest HAPI FHIR image:
 
- ```bash```
+ ```bash
 sudo docker pull hapiproject/hapi:latest
+```
 
 2. **Run the Docker Container**:
 
 After pulling the image, run the following command to start the HAPI FHIR server, making sure to replace yourLocalFolder with the path to the folder containing your application.yaml file:
 
-   ```bash```
+   ```bash
 sudo docker run -p 8080:8080 -v $(pwd)/yourLocalFolder:/configs -e "SPRING_CONFIG_LOCATION=file:///configs/application.yaml" -e "hapi.fhir.default_encoding=xml" hapiproject/hapi:latest
-
+```
 
 Once the container is running, you can access the HAPI FHIR Test Server by navigating to http://localhost:8080/ in your web browser.
 
