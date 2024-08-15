@@ -6,7 +6,7 @@ This project aims to convert unstructured clinical data into a structured format
 
 The repository contains four main folders, each with specific scripts, input files, and output files. Follow the steps below to execute the scripts in the correct order.
 
-### Folder 1: Convert Unstructured to Structured Format
+### Folder 1: Convert Unstructured data to Structured Format
 
 This folder contains the necessary files to convert unstructured clinical data into a structured format.
 
